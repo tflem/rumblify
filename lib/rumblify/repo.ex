@@ -7,6 +7,7 @@ defmodule Rumblify.Repo do
      %Rumblify.User{id: "2", name: "Dash", username: "dmcflash", password: "isitmorning"},
      %Rumblify.User{id: "3", name: "Zippy", username: "zippymcnutty", password: "mmmyummy"}]
   end
+  def all(_module), do: []
 
   def get(module, id) do
     Enum.find all(module), fn map -> map.id == id end
